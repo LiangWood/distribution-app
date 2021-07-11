@@ -1,0 +1,50 @@
+.divider {
+    height: 1px;
+    background: rgba(0, 0, 0, 0.08);
+}
+
+.people {
+    padding-top: 16px;
+}
+
+.people__title {
+    font-family: Noto Sans TC;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height, or 150% */
+
+
+    /* Neutral / 09 - #262626 */
+
+    color: #262626;
+}
+
+.people__wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 16px;
+}
+
+.people .people__adult,
+.people .people__child {
+    /* width: 50%; */
+}
+
+.people .people__adult--title,
+.people .people__child--title {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.people .people__adult span,
+.people .people__child span {
+    font-family: Noto Sans TC;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    color: #8C8C8C;
+}
