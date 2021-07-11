@@ -13,6 +13,7 @@ export default function Input({ roomPeople, name, setInput, disabled }) {
     }, [count]);
 
     const inputHandler = (event) => {
+        if (disabled) return;
         setCount(Number(event.target.value));
     }
 
@@ -52,8 +53,8 @@ export default function Input({ roomPeople, name, setInput, disabled }) {
                 name={name}
                 step={1}
                 value={count}
-                min={0}
-                max={roomPeople.max || disabled}
+                min={roomPeople.min}
+                max={roomPeople.max}
                 onChange={inputHandler}
             />
             <Button

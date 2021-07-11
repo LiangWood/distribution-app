@@ -1,8 +1,8 @@
 import './App.css';
 import Rooms from './components/Rooms';
 
-const people = 3;
-const rooms = [{ min: 1, max: 3 }, { min: 1,  max: 2 }];
+const people = 8;
+const rooms = [{ min: 2, max: 4 }, { min: 3,  max: 4 }];
 
 function App() {
   return (
